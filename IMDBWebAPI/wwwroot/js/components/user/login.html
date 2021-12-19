@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMDB Log in</title>
+    <script src="../../lib/knockout/knockout-latest.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
+    <link rel="stylesheet" href="../../../css/login.css">
+    <link rel="stylesheet" href="../../../css/lib/bootstrap/css/bootstrap.min.css" />
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <div id="login-details" class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login">
+                    <div class="login__field">
+                        <h3>Log in to IMDb</h3>
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input data-bind="value:username" type="text" class="login__input" placeholder="User name / Email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input data-bind="value:password" type="password" class="login__input" placeholder="Password">
+                    </div>
+                    <button data-bind="click: logIn" class="button login__submit">
+                        <span class="button__text">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                    <div class="my-3 text-white shadow bg-liquid text-center">
+                        Don't have any account? <a data-bind="click: signUp">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js'></script>-->
+
+    <script src="loginViewModel.js"></script>
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/knockout/mapping-latest.js"></script>
+
+</body>
+</html>
